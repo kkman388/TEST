@@ -1,36 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  padding: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont;
-  background: #f2f4f8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  color: #1f2937;
+  background: #f8fafc;
+  line-height: 1.6;
 }
 
-.card {
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #111827, #1f2937);
+  color: white;
+  padding: 80px 20px;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+.tagline {
+  margin-top: 12px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.hero-links {
+  margin-top: 24px;
+}
+
+.hero-links a {
+  display: inline-block;
+  margin-right: 12px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
   background: white;
-  padding: 32px;
-  border-radius: 12px;
-  max-width: 420px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  color: #111827;
+  font-weight: 500;
 }
 
-h1 {
+/* Main */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.section {
+  margin-bottom: 48px;
+}
+
+.section h2 {
+  margin-bottom: 16px;
+  font-size: 28px;
+}
+
+/* Projects */
+.project-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.project-card h3 {
   margin-top: 0;
 }
 
-.subtitle {
-  color: #555;
+.project-card a {
+  display: inline-block;
+  margin-top: 12px;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
 }
 
-.links a {
-  display: inline-block;
-  margin-top: 16px;
-  text-decoration: none;
-  color: white;
-  background: #24292f;
-  padding: 10px 16px;
-  border-radius: 6px;
+/* Skills */
+.skills {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.skills li {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+  color: #6b7280;
 }
